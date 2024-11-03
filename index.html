@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+
+<div class="containor">
+<form id="maintenanceForm">
+    <h1>Equipment Maintenance Form</h1>
+
+  <label for="hre">HRE:</label>
+  <label for="make">Make:</label>
+  <input type="text" id="make" name="make" >
+
+  <label for="codeLife">Code Life:</label>
+  <input type="text" id="codeLife" name="codeLife" >
+
+  <label for="hydraulicOilName">Hydraulic Oil Name:</label>
+  <input type="text" id="hydraulicOilName" name="hydraulicOilName" >
+
+  <label for="hydraulicOilCapacity">Hydraulic Oil Capacity:</label>
+  <input type="text" id="hydraulicOilCapacity" name="hydraulicOilCapacity" >
+
+  <label for="petrolTankCapacity">Petrol Tank Capacity:</label>
+  <input type="text" id="petrolTankCapacity" name="petrolTankCapacity" >
+
+  <label for="consumptionPerHour">Consumption Per Hour:</label>
+  <input type="text" id="consumptionPerHour" name="consumptionPerHour" >
+
+  <label for="model">Model:</label>
+  <input type="text" id="model" name="model" >
+
+  <label for="capacity">Capacity:</label>
+  <input type="text" id="capacity" name="capacity" >
+
+  <label for="closedHeight">Closed Height:</label>
+  <input type="text" id="closedHeight" name="closedHeight" >
+
+  <label for="openHeight">Open Height:</label>
+  <input type="text" id="openHeight" name="openHeight" >
+
+  <label for="totalHeight">Total Height:</label>
+  <input type="text" id="totalHeight" name="totalHeight" >
+
+  <label for="firstStroke">First Stroke:</label>
+  <input type="text" id="firstStroke" name="firstStroke" >
+
+  <label for="secondStroke">Second Stroke:</label>
+  <input type="text" id="secondStroke" name="secondStroke" >
+
+  <label for="workingPressure">Working Pressure:</label>
+  <input type="text" id="workingPressure" name="workingPressure" >
+
+  <label for="weight">Weight:</label>
+  <input type="text" id="weight" name="weight" >
+
+  <label for="maintainerName">Maintainer Name:</label>
+  <input type="text" id="maintainerName" name="maintainerName" >
+
+  <label for="assistantName">Assistant Name:</label>
+  <input type="text" id="assistantName" name="assistantName" >
+
+
+  <label for="weekly">Weekly Schedule:</label>
+  <textarea id="weekly" name="weekly"></textarea>
+
+  <label for="monthly">Monthly Schedule:</label>
+  <textarea id="monthly" name="monthly"></textarea>
+
+  <label for="quarterly">Quarterly Schedule:</label>
+  <textarea id="quarterly" name="quarterly"></textarea>
+
+  <label for="halfYearly">Half Yearly Schedule:</label>
+  <textarea id="halfYearly" name="halfYearly"></textarea>
+
+  <label for="yearly">Yearly Schedule:</label>
+  <textarea id="yearly" name="yearly"></textarea>
+
+
+  <label for="main">Main Maintenance:</label>
+  <textarea id="main" name="main"></textarea>
+
+  <input type="checkbox" id="oem" name="oem" value="yes">
+  <label for="oem">Maintenance done as per [OEM]</label><br><br>
+
+
+  <button type="submit">Submit</button>
+</form>
+<div class="result">
+    <h1>Form Data (Editable JSON)</h1>
+    <textarea id="jsonData" rows="25" style="width:100%;"></textarea>
+    <div id="qr">
+        <input placeholder="Give Qr code name here..." type="text" id="qrname" name = "qrnam" >
+        <div id="qrcode"> </div>
+    </div>
+      <div class="cdbtn">
+          
+          <button id="copyButton">Copy QR Code Text</button> 
+          <button id="downloadButton">Download QR Code</button>
+      </div>
+</div>
+
+</div>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<script src="index.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    background-image: url(bandebharat.jpg);
+    background-blend-mode: overlay; 
+   background-color: #738ca5;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(229, 223, 223);
+    text-decoration: solid;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%; 
+    max-width: 600px; 
+}
+
+h1 {
+    background: #ede4e4;
+    text-align: center;
+    color: #dc2be5;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #495057; 
+    font-weight: 500; 
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; 
+}
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #80bdff; 
+    outline: none; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #a204a7; /* Primary blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #10a034; /* Darker blue on hover */
+}
+
+#qrcode {
+    z-index: 1;
+    margin: 20px;
+   border: #b9bcbe;
+   background-color: whitesmoke;
+
+    text-align: center;
+}
+
+#qr{
+    text-align: center;
+    background-color: white;
+    width: 60vb;
+    height: 40vh;
+}
+
+.containor{
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    gap: 10px;
+}
+#qrname{
+    padding: 10px;
+    margin: 5px;
+    border: #10a034 solid 2px;
+}
+.cdbtn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: space-between;
+    align-items: center;
+    margin: 3px;
+    border: 3px;
+    border-radius: 3px;
+}
+#copyButton{
+    margin: 10px;
+    border-radius: 5px;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+
+    /* form {
+        width: 95%;
+        padding: 20px;
+    } */
+    .containor{
+       flex-direction: column; 
+    }
+    #qr{
+        height: 60vh;
+    }
+}
+
