@@ -14,7 +14,7 @@ src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"
    
     let formData = new FormData(form); // Object to hold the form data
     let isEmpty = true; // Flag to check if the form is empty
-    let datastring = ""; // String to hold the form data
+    let datastring = "HRE:"; // String to hold the form data
     // for (let element of form.elements) {
     //   if (element.name && element.value.trim() !== "") { // Check for empty values after trimming whitespace
     //     formData[element.name] = element.value;
